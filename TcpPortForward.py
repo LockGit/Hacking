@@ -7,7 +7,7 @@ filename:TcpPortForward.py
 如果连接不到远程，会sleep 36s，最多尝试200(即两小时)
 
 @usage:
-./rtcp.py stream1 stream2
+./TcpPortForward.py stream1 stream2
 stream为：l:port或c:host:port
 l:port表示监听指定的本地端口
 c:host:port表示监听远程指定的端口
@@ -22,7 +22,7 @@ streams = [None, None]  # 存放需要进行数据转发的两个数据流（都
 debug = 1  # 调试状态 0 or 1
 
 def _usage():
-	print 'Usage: ./rtcp.py stream1 stream2\nstream : l:port  or c:host:port'
+	print 'Usage: ./TcpPortForward.py stream1 stream2\nstream : l:port  or c:host:port'
 
 def _get_another_stream(num):
 	'''
