@@ -2,6 +2,8 @@
 This is my simplicity hacking demo
 
 TcpPortForward.py Use Function
+
+
 使用场景:
 一：
 A服务器在内网，公网无法直接访问这台服务器，但是A服务器可以联网访问公网的B服务器（假设IP为222.2.2.2）。
