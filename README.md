@@ -1,8 +1,9 @@
 # Hacking
 This is my simplicity hacking demo
-
+```
 TcpPortForward.py Use Function
 
+端口转发
 
 使用场景:
 
@@ -24,3 +25,28 @@ ssh 222.2.2.2 -p 10002
 
 二：
 不用更多举例了，TcpPortForward.py的l与c两个参数可以进行灵活的两两组合，多台服务器之间只要搞明白数据流方向，那么就能满足很多场景的需求。
+```
+
+
+
+```
+zipattack.py Use Function
+zip加密文件暴力破解
+
+帮助说明：  python zipattack.py -h
+
+测试：
+zip test.zip *.gif -e 
+
+进行暴力破解：
+python zipattack.py -f test.zip -d password.txt
+```
+
+
+```
+createDict.py Use Function
+生成一个简单的密码破解字典
+python createDict.py 
+
+按ctrl+c 停止生成
+```
