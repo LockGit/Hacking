@@ -46,3 +46,29 @@ python createDict.py
 
 按ctrl+c 停止生成
 ```
+
+### PortScan.py 多线程端口扫描器
+```
+More Help: PortScan.py -h
+
+测试:
+	python PortScan.py -H www.baidu.com -p 80 443 110
+	➜  py python PortScan.py -H www.baidu.com -p 80 443 110 
+		[+] Scan Results for: 119.75.218.70
+		Scanning port 443
+		Scanning port 110
+		Scanning port 80
+		[+]443/tcp open
+		[+] HTTP/1.1 302 Moved Temporarily
+		Server: bfe/1.0.8.18
+		Date: Sun, 06 Nov 2016 08:43:40 GMT
+		Content-T
+		[-]110/tcp closed
+		[-]80/tcp closed
+	As you can see , www.baidu.com port 443 is open ,but port 80 show closed , baidu have security scan strategy ? Because Telnet www.baidu.com 80 success
+	You can Test another website
+	Also, You can local test , The python script support domain or ip mode
+	Example:
+		python PortScan.py -H 127.0.0.1 -p 80
+	Author By Lock 
+```
