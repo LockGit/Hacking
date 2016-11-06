@@ -1,10 +1,8 @@
-# Hacking
+# Hacking Tools Demo
 This is my simplicity hacking demo
 
-### TcpPortForward.py Use Function
+### TcpPortForward.py 端口转发
 ```
-端口转发
-
 使用场景:
 
 一：
@@ -29,10 +27,9 @@ ssh 222.2.2.2 -p 10002
 
 
 
-```
-zipattack.py Use Function
-zip加密文件暴力破解
+### zipattack.py zip加密文件暴力破解
 
+```
 帮助说明：  python zipattack.py -h
 
 测试：
@@ -43,9 +40,8 @@ python zipattack.py -f test.zip -d password.txt
 ```
 
 
+### createDict.py 生成一个简单的密码破解字典
 ```
-createDict.py Use Function
-生成一个简单的密码破解字典
 python createDict.py 
 
 按ctrl+c 停止生成
