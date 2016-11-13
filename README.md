@@ -1,7 +1,7 @@
 # Hacking Tools Demo
 This is my simplicity hacking demo
 
-### TcpPortForward.py 端口转发
+### TcpPortForward.py 端口转发tool
 ```
 使用场景:
 
