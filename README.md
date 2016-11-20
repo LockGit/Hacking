@@ -134,3 +134,12 @@ More Help: PortScan.py -h
 		alice:789
 		test:12345
 ```
+
+### synFlood.py 一个简单的 TCP SYN 洪水攻击 python版
+```
+More Detail:
+python synFlood.py -h
+1,用 Scapy 简单的复制一个 TCP SYN 洪水攻击，将制作一些 IP 数据包,  TCP 513 目标端口。
+2,运行攻击发送 TCP SYN 数据包耗尽目标主机资源，填满它的连接队列，基本瘫 痪目标发送 TCP 重置包的能力。
+3,netstat -an 大量的半链接状态 SYN_RECV
+```
