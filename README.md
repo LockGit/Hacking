@@ -142,4 +142,30 @@ python synFlood.py -h
 1,用 Scapy 简单的复制一个 TCP SYN 洪水攻击，将制作一些 IP 数据包,  TCP 513 目标端口。
 2,运行攻击发送 TCP SYN 数据包耗尽目标主机资源，填满它的连接队列，基本瘫 痪目标发送 TCP 重置包的能力。
 3,netstat -an 大量的半链接状态 SYN_RECV
+
+可能需要的依赖：
+brew search dnet
+
+pip install scapy
+pip install pcapy
+pip install pydumbnet
+
+执行效果:
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+....
 ```
