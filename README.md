@@ -144,21 +144,13 @@ python synFlood.py -h
 3,netstat -an 大量的半链接状态 SYN_RECV
 
 可能需要的依赖：
-brew search dnet
+brew install --with-python libdnet
 
 pip install scapy
 pip install pcapy
 pip install pydumbnet
 
 执行效果:
-Sent 1 packets.
-.
-Sent 1 packets.
-.
-Sent 1 packets.
-.
-Sent 1 packets.
-.
 Sent 1 packets.
 .
 Sent 1 packets.
