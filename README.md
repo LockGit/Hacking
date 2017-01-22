@@ -23,7 +23,7 @@ Options:
 Mac环境：
 	执行：airport -s 获取所有wifi相关信息，这里部分信息进行了打码：
 ```
-![](https://github.com/LockGit/Hacking/blob/master/img/ssid.jpeg)
+![](https://github.com/LockGit/Hacking/blob/master/img/ssid.png)
 ```
 上一步获得了ssid和bssid信息
 执行获取密码：
