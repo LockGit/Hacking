@@ -1,6 +1,40 @@
 # Hacking Tools Demo
 simple hack tools 
 
+
+### attackWiFi.py 一个获取wifi密码的工具
+```
+破解原理：
+	破解wifi万能钥匙的接口协议，wifi万能钥匙的服务端存储了大量的wifi密码相关信息
+	通过向接口提供ssid和bssid信息，获取真实的wifi密码
+	这里要感谢zke1ev3n逆向了wifi万能钥匙的安卓客户端
+	本脚本完善了破解程序，增加了容错机制，获得的密码在response中其实是urlencode的，本脚本也增加了decode解码
+查看帮助
+➜  Hacking git:(master) ✗ py attackWiFi.py -h
+Usage: use:
+	--ssid <wifi ssid> --bssid <wifi bssid>
+	Example: python attackWiFi.py --ssid ssid --bssid bssid
+
+Options:
+  -h, --help          show this help message and exit
+  --ssid=WIFI_SSID    the wifi ssid info
+
+第一步是要获得wifi的ssid和bssid信息，我演示的环境是Mac环境，其他环境请自行寻找下获取ssid和bssid的工具
+Mac环境：
+	执行：airport -s 获取所有wifi相关信息，这里部分信息进行了打码：
+	![](https://github.com/LockGit/Hacking/blob/master/img/ssid.jpeg)
+上一步获得了ssid和bssid信息
+执行获取密码：
+python attackWiFi.py --ssid xxx --bssid ****
+xxx 表示wifi的名称：比如wifi名叫：home
+**** 表示wifi的bssid信息：比如 17:71:94:14:84:0d (随便写的)
+那么获取密码就是：
+python attackWiFi.py --ssid home --bssid 17:71:94:14:84:0d
+成功了会显示password is: xxxxxxx
+也有可能会失败，貌似服务端是有check的，操作多了，会获取失败，这个时候可以换一个网络环境测试，或者换一个wifi测试
+```
+
+
 ### TcpPortForward.py 端口转发tool
 ```
 使用场景:
