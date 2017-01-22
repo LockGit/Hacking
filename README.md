@@ -18,6 +18,7 @@ Usage: use:
 Options:
   -h, --help          show this help message and exit
   --ssid=WIFI_SSID    the wifi ssid info
+  --bssid=WIFI_BSSID  the wifi bssid info
 
 第一步是要获得wifi的ssid和bssid信息，我演示的环境是Mac环境，其他环境请自行寻找下获取ssid和bssid的工具
 Mac环境：
