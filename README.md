@@ -250,9 +250,10 @@ mysql root@localhost:test> execute s;
 Time: 0.002s
 ```
 
-### attackSmb.py 一个SMB漏洞的Poc代码
+### attackSmb/win10.py 一个SMB漏洞的Poc代码
 ```
 此漏洞主要影响Windows Server 2012/2016、Win8/8.1以及Win10系统。
 攻击者可以模拟成一个SMB服务器，诱使客户端发起SMB请求来触发漏洞。
 攻击者也可以通过中间人方式“毒化”SMB回应，插入恶意的SMB回复实现拒绝服务或控制受害系统。
 ```
+![](https://github.com/LockGit/Hacking/blob/master/attackSmb/attacksmb.png)
