@@ -257,3 +257,15 @@ Time: 0.002s
 攻击者也可以通过中间人方式“毒化”SMB回应，插入恶意的SMB回复实现拒绝服务或控制受害系统。
 ```
 ![](https://github.com/LockGit/Hacking/blob/master/attackSmb/attacksmb.png)
+
+### sqlInjetct.py 一个延时注入的验证
+```
+根据返回的时间差来猜测注入的结果是否正确(无视代码很烂)
+帮助：
+➜  Hacking git:(master) ✗ py sqlInjetct.py
+-----Usage:-----
+
+Example:
+python sqlInject.py -u http://xxx.xxx.com/id=123
+
+```
