@@ -23,8 +23,9 @@ Options:
 第一步是要获得wifi的ssid和bssid信息，我演示的环境是Mac环境，其他环境请自行寻找下获取ssid和bssid的工具
 Mac环境：
 	执行：airport -s 获取所有wifi相关信息，这里部分信息进行了打码：
-	因为我在执行之前建过一个软链接：ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
-	有人私信我 airport -s 执行显示不存在的命令，教程很简单，看不懂说明基础还不好，这种问题完全可以google解决 
+	Mac下默认airport -s 是不行的，因为我在执行之前建过一个软链接：
+	ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
+	其他操作系统获取方式可自行Google
 ```
 ![](https://github.com/LockGit/Hacking/blob/master/img/ssid.png)
 ```
