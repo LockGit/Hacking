@@ -45,7 +45,7 @@ python attackWiFi.py --ssid home --bssid 17:71:94:14:84:0d
 需要管理员权限
 for /f "skip=9 tokens=1,2 delims=:" %i in ('netsh wlan show profiles') do  @echo %j | findstr -i -v echo | netsh wlan show profiles %j key=clear
 ```
-![](https://github.com/LockGit/Hacking/blob/master/img/win_wifi.png)
+![](https://github.com/LockGit/Hacking/blob/master/img/win_wifi_cmd.png)
 
 
 ### TcpPortForward.py 端口转发tool
