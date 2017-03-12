@@ -40,6 +40,13 @@ python attackWiFi.py --ssid home --bssid 17:71:94:14:84:0d
 也有可能会失败，貌似服务端是有check的，操作多了，会获取失败，这个时候可以换一个网络环境测试，或者换一个wifi测试
 ```
 
+### 获取所有连接过的wifi密码(Win平台)
+```
+需要管理员权限
+for /f "skip=9 tokens=1,2 delims=:" %i in ('netsh wlan show profiles') do  @echo %j | findstr -i -v echo | netsh wlan show profiles %j key=clear
+```
+![](https://github.com/LockGit/Hacking/blob/master/img/win_wifi.png)
+
 
 ### TcpPortForward.py 端口转发tool
 ```
@@ -63,6 +70,8 @@ ssh 222.2.2.2 -p 10002
 
 二：
 不用更多举例了，TcpPortForward.py的l与c两个参数可以进行灵活的两两组合，多台服务器之间只要搞明白数据流方向，那么就能满足很多场景的需求。
+
+collect from phithon
 ```
 
 
