@@ -66,7 +66,8 @@ A服务器在内网，公网无法直接访问这台服务器，但是A服务器
 
 3. 然后我们就可以这样来访问A服务器的22端口了：
 ssh 222.2.2.2 -p 10002
-原理很简单，这个命令执行后，B服务器的10002端口接收到的任何数据都会传给10001端口，此时，A服务器是连接了B服务器的10001端口的，数据就会传给A服务器，最终进入A服务器的22端口。
+原理很简单，这个命令执行后，B服务器的10002端口接收到的任何数据都会传给10001端口，此时，A服务器是连接了B服务器的10001端口的，
+数据就会传给A服务器，最终进入A服务器的22端口。
 
 二：
 不用更多举例了，TcpPortForward.py的l与c两个参数可以进行灵活的两两组合，多台服务器之间只要搞明白数据流方向，那么就能满足很多场景的需求。
@@ -114,12 +115,9 @@ More Help: PortScan.py -h
 		Content-T
 		[-]110/tcp closed
 		[-]80/tcp closed
-	As you can see , www.baidu.com port 443 is open ,but port 80 show closed , baidu have security scan strategy ? Because Telnet www.baidu.com 80 success
-	You can Test another website
 	Also, You can local test , The python script support domain or ip mode
 	Example:
 		python PortScan.py -H 127.0.0.1 -p 80
-	Author By Lock 
 ```
 
 ### sshAttack.py 多线程ssh密码暴力破解
@@ -135,7 +133,7 @@ More Help: PortScan.py -h
 		  -u USER        specify the user
 		  -c COUNT       specify the max ssh connect count , default 5
 	
-	py python sshAttack.py -H 192.168.2.201 -u zhanghe -f /Users/lock/1.txt -c 20
+	py python sshAttack.py -H 192.168.2.201 -u test -f /Users/lock/1.txt -c 20
 	-c 用户测试指定ssh链接数，具体根据ssh config 文件判断
 
 例：
