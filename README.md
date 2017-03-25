@@ -40,12 +40,23 @@ python attackWiFi.py --ssid home --bssid 17:71:94:14:84:0d
 也有可能会失败，貌似服务端是有check的，操作多了，会获取失败，这个时候可以换一个网络环境测试，或者换一个wifi测试
 ```
 
-### 获取所有连接过的wifi密码(Win平台)
+### 图解https
 ```
-需要管理员权限
-for /f "skip=9 tokens=1,2 delims=:" %i in ('netsh wlan show profiles') do  @echo %j | findstr -i -v echo | netsh wlan show profiles %j key=clear
+网上大部分关于https的讲解各式各样，也不易于理解。于是自己总结画了个图，如有错误欢迎批评指正
 ```
-![](https://github.com/LockGit/Hacking/blob/master/img/win_wifi_cmd.png)
+![](https://github.com/LockGit/Hacking/blob/master/img/https.png)
+```
+1.[server] 生成配对的公钥和私钥，Pub,Pri
+2.[server] 服务器将“Pub”传给客户端
+3.[Client] 生成对称秘钥("key2"),然后用key2加密信息
+4.[Client] 使用“Pub”加密“key2”。因为只有服务器知道“Pri”,所以“key2”是安全的
+5.[Client] send(加密后的数据)和(加密的后的key2)给服务器
+6.[Server] 用私钥“Pri”解密这个result_two，拿到“key2”
+7.[Server]用“key2”解密加密后的数据result_one。数据安全的到达来了服务器。
+总结:
+解密result_one用的key2采用对称加密,而公钥和私钥的生成则采用非对称加密,
+所以一个完整的https流程应该是既包含了对称加密与非对称加密.
+```
 
 
 ### TcpPortForward.py 端口转发tool
@@ -75,6 +86,12 @@ ssh 222.2.2.2 -p 10002
 collect from phithon
 ```
 
+### 获取所有连接过的wifi密码(Win平台)
+```
+需要管理员权限
+for /f "skip=9 tokens=1,2 delims=:" %i in ('netsh wlan show profiles') do  @echo %j | findstr -i -v echo | netsh wlan show profiles %j key=clear
+```
+![](https://github.com/LockGit/Hacking/blob/master/img/win_wifi_cmd.png)
 
 
 ### zipattack.py zip加密文件暴力破解
