@@ -53,9 +53,9 @@ python attackWiFi.py --ssid home --bssid 17:71:94:14:84:0d
 5.[Client] send(加密后的数据)和(加密的后的key2)给服务器
 6.[Server] 用私钥“Pri”解密这个result_two，拿到“key2”
 7.[Server]用“key2”解密加密后的数据result_one。数据安全的到达来了服务器。
-总结:
-解密result_one用的key2采用对称加密,而公钥和私钥的生成则采用非对称加密,
-所以一个完整的https流程应该是既包含了对称加密与非对称加密.
+
+总结:解密result_one用的key2采用对称加密,而公钥和私钥的生成则采用非对称加密,
+所以一个完整的https流程应该是既包含了对称加密也包含了非对称加密.
 ```
 
 
