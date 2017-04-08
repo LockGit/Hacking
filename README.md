@@ -94,7 +94,7 @@ for /f "skip=9 tokens=1,2 delims=:" %i in ('netsh wlan show profiles') do  @echo
 ![](https://github.com/LockGit/Hacking/blob/master/img/win_wifi_cmd.png)
 
 
-### zipattack.py zip加密文件暴力破解
+### zipattack.py | zak.py zip加密文件暴力破解
 
 ```
 帮助说明：  python zipattack.py -h
@@ -104,6 +104,20 @@ zip test.zip *.gif -e
 
 进行暴力破解：
 python zipattack.py -f test.zip -d password.txt
+
+
+第二个脚本：zak.py 是无限穷举
+python zak.py -h 
+Usage: usage	 -f <zipfile> -t <type> -l <length> or -h get help
+
+Options:
+  -h, --help  show this help message and exit
+  -f ZNAME    specifyzip file
+  -t TNAME    specify type(num|a|A|aA|anum|numa|Anum|aAnum)
+  -l LENGTH   specify length,default=8
+例：
+	python zak.py -f test.zip -t num -l 12
+	表示以数字类型，长度最长为12的密码枚举test.zip文件
 ```
 
 
