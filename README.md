@@ -356,10 +356,15 @@ Nginx和IIS7曾经出现过一个PHP相关的解析漏洞（测试环境https://
     'DOCUMENT_ROOT': '/var/www/html',
     ...
 }
-正常来说，SCRIPT_FILENAME的值是一个不存在的文件/var/www/html/favicon.ico/.php，是PHP设置中的一个选项fix_pathinfo导致了这个漏洞。
-PHP为了支持Path Info模式而创造了fix_pathinfo，在这个选项被打开的情况下，fpm会判断SCRIPT_FILENAME是否存在，如果不存在则去掉最后一个/及以后的所有内容，再次判断文件是否存在，往次循环，直到文件存在。
+正常来说:
+SCRIPT_FILENAME的值是一个不存在的文件/var/www/html/favicon.ico/.php，
+是PHP设置中的一个选项fix_pathinfo导致了这个漏洞。
+PHP为了支持Path Info模式而创造了fix_pathinfo，在这个选项被打开的情况下，
+fpm会判断SCRIPT_FILENAME是否存在，如果不存在则去掉最后一个/及以后的所有内容，
+再次判断文件是否存在，往次循环，直到文件存在。
 
-所以，第一次fpm发现/var/www/html/favicon.ico/.php不存在，则去掉/.php，再判断/var/www/html/favicon.ico是否存在。显然这个文件是存在的，于是被作为PHP文件执行，导致解析漏洞。
+所以，第一次fpm发现/var/www/html/favicon.ico/.php不存在，则去掉/.php，再判断/var/www/html/favicon.ico是否存在。
+显然这个文件是存在的，于是被作为PHP文件执行，导致解析漏洞。
 
 正确的解决方法有两种：
 一，在Nginx端使用fastcgi_split_path_info将path info信息去除后，用tryfiles判断文件是否存在；
