@@ -333,3 +333,37 @@ ns3.dnsv4.com
 dig axfr xxx.com @ns3.dnsv4.com
 有返回就表示漏洞存在
 ```
+
+### 使用Python构造一个fastcgi协议请求内容发送给php-fpm , Nginx（IIS7）解析漏洞原理
+```
+查看帮助：
+python fpm.py -h 
+
+这篇文章写的不错，于是收集了过来：
+https://www.leavesongs.com/PENETRATION/fastcgi-and-php-fpm.html
+
+简述如下：
+Nginx和IIS7曾经出现过一个PHP相关的解析漏洞（测试环境https://github.com/phith0n/vulhub/tree/master/nginx_parsing_vulnerability）.
+该漏洞现象是，在用户访问http://127.0.0.1/favicon.ico/.php时，访问到的文件是favicon.ico，但却按照.php后缀解析了。
+
+用户请求http://127.0.0.1/favicon.ico/.php，nginx将会发送如下环境变量到fpm里：
+
+{
+    ...
+    'SCRIPT_FILENAME': '/var/www/html/favicon.ico/.php',
+    'SCRIPT_NAME': '/favicon.ico/.php',
+    'REQUEST_URI': '/favicon.ico/.php',
+    'DOCUMENT_ROOT': '/var/www/html',
+    ...
+}
+正常来说，SCRIPT_FILENAME的值是一个不存在的文件/var/www/html/favicon.ico/.php，是PHP设置中的一个选项fix_pathinfo导致了这个漏洞。
+PHP为了支持Path Info模式而创造了fix_pathinfo，在这个选项被打开的情况下，fpm会判断SCRIPT_FILENAME是否存在，如果不存在则去掉最后一个/及以后的所有内容，再次判断文件是否存在，往次循环，直到文件存在。
+
+所以，第一次fpm发现/var/www/html/favicon.ico/.php不存在，则去掉/.php，再判断/var/www/html/favicon.ico是否存在。显然这个文件是存在的，于是被作为PHP文件执行，导致解析漏洞。
+
+正确的解决方法有两种：
+一，在Nginx端使用fastcgi_split_path_info将path info信息去除后，用tryfiles判断文件是否存在；
+二，借助PHP-FPM的security.limit_extensions配置项，避免其他后缀文件被解析。
+
+```
+
