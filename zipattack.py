@@ -2,7 +2,7 @@
 # @Author: lock
 # @Date:   2016-11-02 17:17:26
 # @Last Modified by:   lock
-# @Last Modified time: 2016-11-02 18:57:04
+# @Last Modified time: 2017-05-04 00:20:23
 import zipfile
 import threading
 import optparse
@@ -10,6 +10,7 @@ def extractFile(zFile, password):
 	try:
 		zFile.extractall(pwd=password) 
 		print("Key Found:", password)
+		exit()
 	except: 
 		print("start test passwod: "+ password +"\n")
 		pass

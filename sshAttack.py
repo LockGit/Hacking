@@ -48,13 +48,13 @@ def run():
         print(parser.usage)
         exit(0)
     with open(passwdFile,'r') as fp:
-        if Found:
-            print "[*] Exiting: Key Found"
-            exit(0)
-        if Fails > 5:
-            print "[!] Exiting: Too Many Socket Timeouts"
-            exit(0)
         for item in fp.readlines():
+            if Found:
+                print "[*] Exiting: Key Found"
+                exit(0)
+            if Fails > 5:
+                print "[!] Exiting: Too Many Socket Timeouts"
+                exit(0)
             connection_lock.acquire()
             password = item.strip('\r').strip('\n')
             print("[-] Testing: " + str(password))
