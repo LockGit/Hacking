@@ -60,7 +60,7 @@ python attackWiFi.py --ssid home --bssid 17:71:94:14:84:0d
 
 ### 图解HSTS
 ```
-一个全网独一无二，助你深入理解HSTS的图，O(∩_∩)O哈哈~
+HSTS一定是安全的的吗？助你深入理解HSTS的图。
 ```
 ![](https://github.com/LockGit/Hacking/blob/master/img/hsts.png)
 
