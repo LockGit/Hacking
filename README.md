@@ -58,6 +58,12 @@ python attackWiFi.py --ssid home --bssid 17:71:94:14:84:0d
 所以一个完整的https流程应该是既包含了对称加密也包含了非对称加密.
 ```
 
+### 图解HSTS
+```
+一个全网独一无二，助你深入理解HSTS的图，O(∩_∩)O哈哈~
+```
+![](https://github.com/LockGit/Hacking/blob/master/img/hsts.png)
+
 
 ### TcpPortForward.py 端口转发tool
 ```
