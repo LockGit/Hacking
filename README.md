@@ -92,6 +92,18 @@ ssh 222.2.2.2 -p 10002
 collect from phithon
 ```
 
+### typeEcho get Shell , typeEcho反序列化漏洞利用
+```
+typeEchoShell.php 为生成shell的内容，经过base64后序列化的值，后用于typeEchoShell.py中的cookie一项
+typeEchoShell.py  获取目标站点shell
+
+例：python typeEchoShell.py -u http://www.xxx.com
+
+若要自定义shell内容，可更改typeEchoShell.php，自定义shell内容
+
+```
+
+
 ### 获取所有连接过的wifi密码(Win平台)
 ```
 需要管理员权限
