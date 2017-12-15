@@ -474,3 +474,4 @@ git clone git@github.com:Xyntax/1000php.git
 效果如下：
 ```
 ![](https://github.com/LockGit/Hacking/blob/master/img/1000php.png)
+![](https://github.com/LockGit/Hacking/blob/master/img/1000php_detail.png)
