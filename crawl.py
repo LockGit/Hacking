@@ -2,7 +2,7 @@
 # @Author: lock
 # @Date:   2017-12-15 18:23:22
 # @Last Modified by:   lock
-# @Last Modified time: 2017-12-15 18:58:24
+# @Last Modified time: 2017-12-16 00:41:42
 import requests  
 from lxml import html  
 import sys  
@@ -71,9 +71,9 @@ while(len(url_queue)):
 
 			file_path = "%s/" %(CRAWL_IMAGES_DIR,) + "%02d-%02d-%02d-" % (year, month, day) + "%02d:%02d:%02d-" % (hour, minute, second) + filename
 	 
-			f = open(file_path, 'w')
-			f.write(r.content)
-			f.close()
+			with open(file_path,'w') as f:
+				f.write(r.content)
+
 			img = Image.open(file_path)
 			width = img.size[0]
 			height = img.size[1]
@@ -84,7 +84,7 @@ while(len(url_queue)):
  
 			url_image.add(image)
  
-			time.sleep(random.randint(1,3))
+			time.sleep(random.randint(1,2))
 		except IOError:
 			print "can not open image"
 		except Exception, e:
@@ -100,7 +100,7 @@ while(len(url_queue)):
 				url_crawled.add(link)
 				url_queue.append(link)
  
-	time.sleep(random.randint(1,5))
+	time.sleep(random.randint(1,2))
 
 
 print 'all done'
