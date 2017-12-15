@@ -1,7 +1,6 @@
 # Hacking Tools Demo
 simple hack tools ,以下所有工具，代码不得用于非法用途，仅当做学习使用，违者一切后果自行承担！
 
-
 ### attackWiFi.py 一个获取wifi密码的工具
 ```
 破解原理：
@@ -390,3 +389,20 @@ fpm会判断SCRIPT_FILENAME是否存在，如果不存在则去掉最后一个/�
 
 ```
 
+### 摩斯密码加解密
+```
+摩斯密码是由美国的三缪摩斯发明的一套加密算法，是一种断断续续的信号代码。
+加密：
+➜  ~ python morse.py -e lock
+.-.. --- -.-. -.-
+
+解密:
+➜  ~ python morse.py -d '.-.. --- -.-. -.-'
+lock
+➜  ~
+
+查看帮助:
+➜  ~ python morse.py
+usage	 -e|-d msg or -h get help
+
+```
