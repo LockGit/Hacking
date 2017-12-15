@@ -20,11 +20,11 @@ __Menu__
 | <a href="https://github.com/LockGit/Hacking#ntpdenialservicepy-一个使ntp拒绝服务的poc代码">ntpdenialservice.py</a> | 一个使ntp拒绝服务的poc代码 |
 | <a href="https://github.com/LockGit/Hacking#分享一个sql注入的技巧">SQL Inject</a> | 分享一个SQL注入的技巧 |
 | <a href="https://github.com/LockGit/Hacking#attacksmbwin10py-一个smb漏洞的poc代码">attackSmb/win10.py</a> | 一个SMB漏洞的Poc |
-| <a href="https://github.com/LockGit/Hacking#badtunnel-poc.rb-badtunnel-跨网段劫持">badtunnel-poc.rb</a> | badtunnel 跨网段劫持 |
+| <a href="https://github.com/LockGit/Hacking#badtunnel-pocrb-badtunnel-跨网段劫持">badtunnel-poc.rb</a> | badtunnel 跨网段劫持 |
 | <a href="https://github.com/LockGit/Hacking#sqlinjetctpy-一个延时注入的验证">sqlInjetct.py</a> | 一个延时注入的验证 |
 | <a href="https://github.com/LockGit/Hacking#关于ssrf漏洞-与-dns域传送漏洞">SSRF & DNS</a> | SSRF漏洞 & DNS域传送漏洞 |
 | <a href="https://github.com/LockGit/Hacking#使用python构造一个fastcgi协议请求内容发送给php-fpm--nginxiis7解析漏洞原理">fpm.py</a> | Nginx（IIS7）解析漏洞原理 |
-| <a href="https://github.com/LockGit/Hacking#摩斯密码加解密">morse.py</a> | 摩斯密码加解密 |
+| <a href="https://github.com/LockGit/Hacking#morsepy-摩斯密码加解密">morse.py</a> | 摩斯密码加解密 |
 
 
 ### attackWiFi.py 一个获取wifi密码的工具
