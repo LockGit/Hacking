@@ -26,7 +26,7 @@ __Menu__
 | <a href="https://github.com/LockGit/Hacking#使用python构造一个fastcgi协议请求内容发送给php-fpm--nginxiis7解析漏洞原理">fpm.py</a> | Nginx（IIS7）解析漏洞原理 |
 | <a href="https://github.com/LockGit/Hacking#morsepy-摩斯密码加解密">morse.py</a> | 摩斯密码加解密 |
 | <a href="https://github.com/LockGit/Hacking#crawlpy-轻量级图片爬虫">crawl.py</a> | 轻量级图片爬虫 |
-| <a href="https://github.com/LockGit/Hacking#wooyun_indexpy-1000个php代码审计案例20167以前乌云公开漏洞---增加索引)---增加索引">wooyun_index.py</a> | 1000个PHP代码审计案例(2016.7以前乌云公开漏洞)---增加索引 |
+| <a href="https://github.com/LockGit/Hacking#wooyun_indexpy-1000个php代码审计案例20167以前乌云公开漏洞---增加索引">wooyun_index.py</a> | 1000个PHP代码审计案例(2016.7以前乌云公开漏洞)---增加索引 |
 
 
 
