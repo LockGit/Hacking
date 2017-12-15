@@ -2,7 +2,7 @@
 # @Author: lock
 # @Date:   2017-12-15 18:23:22
 # @Last Modified by:   lock
-# @Last Modified time: 2017-12-16 00:41:42
+# @Last Modified time: 2017-12-16 00:47:42
 import requests  
 from lxml import html  
 import sys  
@@ -29,6 +29,9 @@ CRAWL_IMAGES_DIR = 'crawl_images'
 # 根据图片大小过滤，单位像素,小于这个像素的不要
 WIDTH = 30
 HEIGHT = 30
+
+# 是否开启WAF防护，设置为True会放缓请求时间
+WAF = False
  
 
 ###########################################################
@@ -83,8 +86,8 @@ while(len(url_queue)):
 				print file_path
  
 			url_image.add(image)
- 
-			time.sleep(random.randint(1,2))
+ 			if WAF:
+				time.sleep(random.randint(1,2))
 		except IOError:
 			print "can not open image"
 		except Exception, e:
@@ -99,8 +102,8 @@ while(len(url_queue)):
 			if link.startswith(url_rule) is True:
 				url_crawled.add(link)
 				url_queue.append(link)
- 
-	time.sleep(random.randint(1,2))
+ 	if WAF:
+		time.sleep(random.randint(1,2))
 
 
 print 'all done'
