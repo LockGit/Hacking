@@ -26,6 +26,8 @@ __Menu__
 | <a href="https://github.com/LockGit/Hacking#使用python构造一个fastcgi协议请求内容发送给php-fpm--nginxiis7解析漏洞原理">fpm.py</a> | Nginx（IIS7）解析漏洞原理 |
 | <a href="https://github.com/LockGit/Hacking#morsepy-摩斯密码加解密">morse.py</a> | 摩斯密码加解密 |
 | <a href="https://github.com/LockGit/Hacking#crawlpy-轻量级图片爬虫">crawl.py</a> | 轻量级图片爬虫 |
+| <a href="https://github.com/LockGit/Hacking# wooyun_indexpy-1000个PHP代码审计案例(2016-7以前乌云公开漏洞)---增加索引">wooyun_index.py</a> | 1000个PHP代码审计案例(2016.7以前乌云公开漏洞)---增加索引 |
+
 
 
 ### attackWiFi.py 一个获取wifi密码的工具
@@ -459,4 +461,16 @@ python crawl.py
 
 ```
 
-
+### wooyun_index.py 1000个PHP代码审计案例(2016.7以前乌云公开漏洞)---增加索引
+```
+git clone git@github.com:Xyntax/1000php.git
+默认是没有索引的，所以查看漏洞十分不方便
+1，cd 1000php
+2，执行下载我的脚本：wget https://raw.githubusercontent.com/LockGit/Hacking/master/wooyun_index.py -O wooyun_index.py
+3，执行：mkdir css && mkdir js 
+4，执行：wget https://github.com/LockGit/Hacking/raw/master/res/style.css -O style.css -P css/
+5，执行：wget https://github.com/LockGit/Hacking/raw/master/res/jquery-1.4.2.min.js -O jquery-1.4.2.min.js -P js/
+6，执行：python wooyun_index.py 会生成漏洞索引列表，此时会生成index.html文件，打开这个文件即可
+效果如下：
+```
+![](https://github.com/LockGit/Hacking/blob/master/img/1000php.png)
