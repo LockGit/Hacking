@@ -25,6 +25,7 @@ __Menu__
 | <a href="https://github.com/LockGit/Hacking#关于ssrf漏洞-与-dns域传送漏洞">SSRF & DNS</a> | SSRF漏洞 & DNS域传送漏洞 |
 | <a href="https://github.com/LockGit/Hacking#使用python构造一个fastcgi协议请求内容发送给php-fpm--nginxiis7解析漏洞原理">fpm.py</a> | Nginx（IIS7）解析漏洞原理 |
 | <a href="https://github.com/LockGit/Hacking#morsepy-摩斯密码加解密">morse.py</a> | 摩斯密码加解密 |
+| <a href="https://github.com/LockGit/Hacking#crawlpy-轻量级图片爬虫">crawl.py</a> | 轻量级图片爬虫 |
 
 
 ### attackWiFi.py 一个获取wifi密码的工具
@@ -439,3 +440,23 @@ lock
 usage	 -e|-d msg or -h get help
 
 ```
+
+### crawl.py 轻量级图片爬虫
+```
+修改crawl.py中:
+URL = "https://www.xxx.top" # 要爬取的网站
+
+# 爬取的URL域名范围
+URL_RULE = [
+        'https://www.xxx.top',
+        'https://xxx.top',
+        'http://www.xxx.top',
+        'http://xxx.top'
+]
+
+执行爬虫：
+python crawl.py 
+
+```
+
+
