@@ -5,26 +5,26 @@ __Menu__
 
 | Topic                                    | Description                              |
 | :--------------------------------------- | :--------------------------------------- |
-| <a href="./#attackwifipy-一个获取wifi密码的工具">attackWiFi.py | 一个获取wifi密码的工具 |
-| <a href="./#图解https">图解https</a> | 图解https |
-| <a href="./#图解hsts">图解HSTS</a> | 图解HSTS |
-| <a href="./#tcpportforwardpy-端口转发tool">TcpPortForward.py</a> | 端口转发tool |
-| <a href="./#typeecho-get-shell--typeecho反序列化漏洞利用">typeEchoShell.py|typeEchoShell.php</a> | typeEcho反序列化漏洞利用 | 
-| <a href="./#获取所有连接过的wifi密码win平台">wifi密码</a> | 获取所有连接过的wifi密码(Win平台) | 
-| <a href="./#zipattackpy--zakpy-zip加密文件暴力破解">zipattack.py|zak.py</a> | zip加密文件暴力破解 |
-| <a href="./#createDictpy-生成一个简单的密码破解字典">createDict.py</a> | 生成一个简单的密码破解字典 |
-| <a href="./#portscanpy-多线程端口扫描器">PortScan.py</a> | 多线程端口扫描器 |
-| <a href="./#sshattackpy-多线程ssh密码暴力破解">sshAttack.py</a> | 多线程ssh密码暴力破解 |
-| <a href="./#ftpattackpy-多线程ftp密码暴力破解">ftpAttack.py</a> | 多线程ftp密码暴力破解 |
-| <a href="./#synfloodpy-一个简单的-tcp-syn-洪水攻击-python版">synFlood.py</a> | synFlood TCP SYN 洪水攻击 |
-| <a href="./#ntpdenialservicepy-一个使ntp拒绝服务的poc代码">ntpdenialservice.py</a> | 一个使ntp拒绝服务的poc代码 |
-| <a href="./#分享一个sql注入的技巧">SQL Inject</a> | 分享一个SQL注入的技巧 |
-| <a href="./#attacksmbwin10py-一个smb漏洞的poc代码">attackSmb/win10.py</a> | 一个SMB漏洞的Poc |
-| <a href="./#badtunnel-poc.rb-badtunnel-跨网段劫持">badtunnel-poc.rb</a> | badtunnel 跨网段劫持 |
-| <a href="./#sqlinjetctpy-一个延时注入的验证">sqlInjetct.py</a> | 一个延时注入的验证 |
-| <a href="./#关于ssrf漏洞-与-dns域传送漏洞">SSRF & DNS</a> | SSRF漏洞 & DNS域传送漏洞 |
-| <a href="./#使用python构造一个fastcgi协议请求内容发送给php-fpm--nginxiis7解析漏洞原理">fpm.py</a> | Nginx（IIS7）解析漏洞原理 |
-| <a href="./#摩斯密码加解密">morse.py</a> | 摩斯密码加解密 |
+| <a href="https://github.com/LockGit/Hacking#attackwifipy-一个获取wifi密码的工具">attackWiFi.py | 一个获取wifi密码的工具 |
+| <a href="https://github.com/LockGit/Hacking#图解https">图解https</a> | 图解https |
+| <a href="https://github.com/LockGit/Hacking#图解hsts">图解HSTS</a> | 图解HSTS |
+| <a href="https://github.com/LockGit/Hacking#tcpportforwardpy-端口转发tool">TcpPortForward.py</a> | 端口转发tool |
+| <a href="https://github.com/LockGit/Hacking#typeecho-get-shell--typeecho反序列化漏洞利用">typeEchoShell.py|typeEchoShell.php</a> | typeEcho反序列化漏洞利用 | 
+| <a href="https://github.com/LockGit/Hacking#获取所有连接过的wifi密码win平台">wifi密码</a> | 获取所有连接过的wifi密码(Win平台) | 
+| <a href="https://github.com/LockGit/Hacking#zipattackpy--zakpy-zip加密文件暴力破解">zipattack.py|zak.py</a> | zip加密文件暴力破解 |
+| <a href="https://github.com/LockGit/Hacking#createDictpy-生成一个简单的密码破解字典">createDict.py</a> | 生成一个简单的密码破解字典 |
+| <a href="https://github.com/LockGit/Hacking#portscanpy-多线程端口扫描器">PortScan.py</a> | 多线程端口扫描器 |
+| <a href="https://github.com/LockGit/Hacking#sshattackpy-多线程ssh密码暴力破解">sshAttack.py</a> | 多线程ssh密码暴力破解 |
+| <a href="https://github.com/LockGit/Hacking#ftpattackpy-多线程ftp密码暴力破解">ftpAttack.py</a> | 多线程ftp密码暴力破解 |
+| <a href="https://github.com/LockGit/Hacking#synfloodpy-一个简单的-tcp-syn-洪水攻击-python版">synFlood.py</a> | synFlood TCP SYN 洪水攻击 |
+| <a href="https://github.com/LockGit/Hacking#ntpdenialservicepy-一个使ntp拒绝服务的poc代码">ntpdenialservice.py</a> | 一个使ntp拒绝服务的poc代码 |
+| <a href="https://github.com/LockGit/Hacking#分享一个sql注入的技巧">SQL Inject</a> | 分享一个SQL注入的技巧 |
+| <a href="https://github.com/LockGit/Hacking#attacksmbwin10py-一个smb漏洞的poc代码">attackSmb/win10.py</a> | 一个SMB漏洞的Poc |
+| <a href="https://github.com/LockGit/Hacking#badtunnel-poc.rb-badtunnel-跨网段劫持">badtunnel-poc.rb</a> | badtunnel 跨网段劫持 |
+| <a href="https://github.com/LockGit/Hacking#sqlinjetctpy-一个延时注入的验证">sqlInjetct.py</a> | 一个延时注入的验证 |
+| <a href="https://github.com/LockGit/Hacking#关于ssrf漏洞-与-dns域传送漏洞">SSRF & DNS</a> | SSRF漏洞 & DNS域传送漏洞 |
+| <a href="https://github.com/LockGit/Hacking#使用python构造一个fastcgi协议请求内容发送给php-fpm--nginxiis7解析漏洞原理">fpm.py</a> | Nginx（IIS7）解析漏洞原理 |
+| <a href="https://github.com/LockGit/Hacking#摩斯密码加解密">morse.py</a> | 摩斯密码加解密 |
 
 
 ### attackWiFi.py 一个获取wifi密码的工具
