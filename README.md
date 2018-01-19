@@ -480,19 +480,19 @@ git clone git@github.com:Xyntax/1000php.git
 ```
 访问：http://www.goubanjia.com/free/index.shtml 可看到该网站提供了很多代理服务器
 但是核心的代理ip信息采用了反爬虫策略
-可以看下page结构如下,写过爬虫的同学知道这是有意混淆页面结构,让爬虫无法抓取到正确信息，从而在一定程度上起到保护作用：
-```
-![](https://github.com/LockGit/Hacking/blob/master/img/page_detail.png)
-```
+可以看下page结构如下面图片描述,写过爬虫的同学知道这是有意混淆页面结构,让爬虫无法抓取到正确信息，从而在一定程度上起到保护作用。
 写了2个py文件进行了一个小测试，是一个简单实现：
 没有什么高深的技术含量
 核心原理是通过selenium唤醒chrome打开待抓取页面，然后程序自动对每一页内容进行截图，保存在proxy_crawl/img下面(如下图)
 之后通过pytesseract对抓取到的图片进行识别，直接无视前端页面的混淆
+pytesseract模块可以尝试下，国外还有大神用js实现了这个模块，支持62种语言浏览器端的识别，当然，也是需要模型数据支持的
+一般还可以识别一下简单的验证码，但是复杂的不行，太过复杂的可能需要比如tensorflow+cnn，网上也有案例
 清洗数据并记录到proxy_crawl/proxy.md文件中
 环境：python 2.7.14 , 模块可以自己看下 py 文件代码，pip install 下所用到的模块
 执行：python get_proxy.py 抓取图片
 执行：python ocr_img.py 代理数据识别
 ```
+![](https://github.com/LockGit/Hacking/blob/master/img/page_detail.png)
 ![](https://github.com/LockGit/Hacking/blob/master/img/crawl_png.png)
 ![](https://github.com/LockGit/Hacking/blob/master/img/img_list.png)
 ![](https://github.com/LockGit/Hacking/blob/master/img/proxy_list.png)
