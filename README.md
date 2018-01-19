@@ -27,7 +27,7 @@ __Menu__
 | <a href="https://github.com/LockGit/Hacking#morsepy-摩斯密码加解密">morse.py</a> | 摩斯密码加解密 |
 | <a href="https://github.com/LockGit/Hacking#crawlpy-轻量级图片爬虫">crawl.py</a> | 轻量级图片爬虫 |
 | <a href="https://github.com/LockGit/Hacking#wooyun_indexpy-1000个php代码审计案例20167以前乌云公开漏洞---增加索引">wooyun_index.py</a> | 1000个PHP代码审计案例(2016.7以前乌云公开漏洞)---增加索引 |
-
+| <a href="https://github.com/LockGit/Hacking#wooyun_indexpy-1000个php代码审计案例20167以前乌云公开漏洞---增加索引"></a> | proxy_crawl/get_proxy.py | ocr_img.py 反爬虫代理服务器抓取实现方式 |
 
 
 ### attackWiFi.py 一个获取wifi密码的工具
@@ -475,3 +475,28 @@ git clone git@github.com:Xyntax/1000php.git
 ```
 ![](https://github.com/LockGit/Hacking/blob/master/img/1000php.png)
 ![](https://github.com/LockGit/Hacking/blob/master/img/1000php_detail.png)
+
+### proxy_crawl/get_proxy.py | ocr_img.py 反爬虫代理服务器抓取实现方式
+```
+访问：http://www.goubanjia.com/free/index.shtml 可看到该网站提供了很多代理服务器，但是核心的代理ip信息采用了反爬虫策略
+可以看下page结构如下,写过爬虫的同学知道这是有意混淆页面结构,让爬虫无法抓取到正确信息，从而在一定程度上起到保护作用：
+```
+![](https://github.com/LockGit/Hacking/blob/master/img/page_detail.png)
+```
+写了2个py文件进行了一个小测试：
+没有什么高深的技术含量
+核心原理是通过selenium唤醒chrome打开待抓取页面，然后程序自动对每一页内容进行截图，保存在proxy_crawl/img下面(如下图)
+之后通过pytesseract对抓取到的图片进行识别，直接无视前端页面的混淆
+清洗数据并记录到proxy_crawl/proxy.md文件中
+环境：python 2.7.14
+执行：python get_proxy.py 抓取图片
+执行：python ocr_img.py 代理数据识别
+```
+![](https://github.com/LockGit/Hacking/blob/master/img/crawl_png.png)
+![](https://github.com/LockGit/Hacking/blob/master/img/img_list.png)
+![](https://github.com/LockGit/Hacking/blob/master/img/proxy_list.png)
+
+
+
+
+
