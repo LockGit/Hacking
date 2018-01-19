@@ -481,7 +481,7 @@ git clone git@github.com:Xyntax/1000php.git
 访问：http://www.goubanjia.com/free/index.shtml 可看到该网站提供了很多代理服务器
 但是核心的代理ip信息采用了反爬虫策略
 可以看下page结构如下面图片描述,写过爬虫的同学知道这是有意混淆页面结构,让爬虫无法抓取到正确信息，从而在一定程度上起到保护作用。
-写了2个py文件进行了一个小测试，是一个简单实现：
+写了2个py文件进行了一个小测试，是一个简单实现,代码在仓库proxy_crawl目录下：
 没有什么高深的技术含量
 核心原理是通过selenium唤醒chrome打开待抓取页面，然后程序自动对每一页内容进行截图，保存在proxy_crawl/img下面(如下图)
 之后通过pytesseract对抓取到的图片进行识别，直接无视前端页面的混淆
