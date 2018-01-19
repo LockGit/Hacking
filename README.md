@@ -27,7 +27,7 @@ __Menu__
 | <a href="https://github.com/LockGit/Hacking#morsepy-摩斯密码加解密">morse.py</a> | 摩斯密码加解密 |
 | <a href="https://github.com/LockGit/Hacking#crawlpy-轻量级图片爬虫">crawl.py</a> | 轻量级图片爬虫 |
 | <a href="https://github.com/LockGit/Hacking#wooyun_indexpy-1000个php代码审计案例20167以前乌云公开漏洞---增加索引">wooyun_index.py</a> | 1000个PHP代码审计案例(2016.7以前乌云公开漏洞)---增加索引 |
-| <a href="https://github.com/LockGit/Hacking#proxy_crawlget_proxypy--ocr_imgpy-反爬虫代理服务器抓取实现方式">proxy_crawl/get_proxy.py | proxy_crawl/ocr_img.py </a> |反爬虫代理服务器抓取实现 |
+| <a href="https://github.com/LockGit/Hacking#proxy_crawlget_proxypy--ocr_imgpy-反爬虫代理服务器抓取实现方式">proxy_crawl/get_proxy.py & proxy_crawl/ocr_img.py </a> |反爬虫代理服务器抓取实现 |
 
 
 ### attackWiFi.py 一个获取wifi密码的工具
