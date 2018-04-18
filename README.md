@@ -28,8 +28,8 @@ __Menu__
 | <a href="https://github.com/LockGit/Hacking#crawlpy-轻量级图片爬虫">crawl.py</a> | 轻量级图片爬虫 |
 | <a href="https://github.com/LockGit/Hacking#wooyun_indexpy-1000个php代码审计案例20167以前乌云公开漏洞---增加索引">wooyun_index.py</a> | 1000个PHP代码审计案例(2016.7以前乌云公开漏洞)---增加索引 |
 | <a href="https://github.com/LockGit/Hacking#proxy_crawlget_proxypy--ocr_imgpy-反爬虫代理服务器抓取实现方式">proxy_crawl/get_proxy.py & proxy_crawl/ocr_img.py </a> |反爬虫代理服务器抓取实现 |
-| <a href="https://github.com/LockGit/Hacking#验证码识别v1+HTTP协议Range特性分析">验证码识别v1+HTTP协议Range特性分析.pdf</a> | 验证码识别v1+HTTP协议Range特性分析 |
-| <a href="https://github.com/LockGit/Hacking#基于机器学习(TensorFlow)的复杂验证码识别">基于机器学习(TensorFlow)的复杂验证码识别.pdf</a> | 基于机器学习(TensorFlow)的复杂验证码识别 |
+| <a href="https://github.com/LockGit/Hacking#验证码识别v1http协议range特性分析">验证码识别v1+HTTP协议Range特性分析.pdf</a> | 验证码识别v1+HTTP协议Range特性分析 |
+| <a href="https://github.com/LockGit/Hacking#基于机器学习tensorflow的复杂验证码识别">基于机器学习(TensorFlow)的复杂验证码识别.pdf</a> | 基于机器学习(TensorFlow)的复杂验证码识别 |
 
 
 ### attackWiFi.py 一个获取wifi密码的工具
@@ -505,7 +505,8 @@ pytesseract模块可以尝试下，国外还有大神用js实现了这个模块�
 Google 搜索 tesseract.js 字符识别
 ```
 ![](https://github.com/LockGit/Hacking/blob/master/img/code_v1.png)
-总结文档：验证码识别v1+HTTP协议Range特性分析.pdf(https://github.com/LockGit/Hacking/blob/master/res/doc/验证码识别v1+HTTP协议Range特性分析.pdf)
+
+总结文档：+ [验证码识别v1+HTTP协议Range特性分析.pdf](https://github.com/LockGit/Hacking/blob/master/res/doc/验证码识别v1+HTTP协议Range特性分析.pdf)
 ```
 HTTP协议Range特性分析(多线程文件下载器实现):
 ```
@@ -527,7 +528,7 @@ SVM算法相比较KNN算法来说，原理上要复杂复杂的多，SVM算法�
 验证码预测截图:
 ```
 ![](https://github.com/LockGit/Hacking/blob/master/img/cnn_test.png)
-总结文档：基于机器学习(TensorFlow)的复杂验证码识别.pdf(https://github.com/LockGit/Hacking/blob/master/res/doc/基于机器学习(TensorFlow)的复杂验证码识别.pdf)
+总结文档：+ [基于机器学习(TensorFlow)的复杂验证码识别.pdf](https://github.com/LockGit/Hacking/blob/master/res/doc/基于机器学习(TensorFlow)的复杂验证码识别.pdf)
 
 
 
