@@ -530,6 +530,7 @@ SVM算法相比较KNN算法来说，原理上要复杂复杂的多，SVM算法�
 验证码预测截图:
 ```
 ![](https://github.com/LockGit/Hacking/blob/master/img/cnn_test.png)
+
 总结文档：+ [基于机器学习(TensorFlow)的复杂验证码识别.pdf](https://github.com/LockGit/Hacking/blob/master/res/doc/基于机器学习(TensorFlow)的复杂验证码识别.pdf)
 
 
