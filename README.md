@@ -1,5 +1,4 @@
 # Hacking Tools Demo
-simple hack tools ,以下所有工具，代码不得用于非法用途，仅当做学习使用，违者一切后果自行承担！
 
 __Menu__
 
