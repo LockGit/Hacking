@@ -1,5 +1,5 @@
 # Hacking Tools Demo
-[English Version(英文版本)](README.md)
+[English version(英文版本)](README.md)
 
 __Menu__
 
