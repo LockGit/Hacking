@@ -1,0 +1,9 @@
+The hackers are breaking into code repositories hosted on GitHub, one of the world’s largest software development platforms, and BitBucket, a similar service owned by Atlassian. GitHub did not immediately respond to a request for comment.
+
+Do you know anything about this incident? You can contact this reporter securely on Signal at +1 917 257 1382, OTR chat at lorenzofb@jabber.ccc.de, or email lorenzo@motherboard.tv
+
+On Thursday, a Reddit user wrote a post warning about the attack, saying his repository got hacked and his code removed. The intruder left a message:
+
+“To recover your lost code and avoid leaking it: Send us 0.1 Bitcoin (BTC) [around $570] to our Bitcoin address 1ES14c7qLb5CYhLMUekctxLgc1FV2Ti9DA and contact us by Email at admin@gitsbackup.com with your Git login and a Proof of Payment. If you are unsure if we have your data, contact us and we will send you a proof. Your code is downloaded and backed up on our servers. If we dont receive your payment in the next 10 Days, we will make your code public or use them otherwise.”
+
+Jeremy Galloway, a security researcher at Atlassian, which owns BitBucket, told Motherboard in an online chat that the company has seen a lot of users’ repositories getting hit by these hackers. Galloway said he estimates the victims to be at least 1,000, based on internal numbers and online reports. That seems to be a good estimate considering that a search on GitHub for the hackers’ address returns 392 projects, as first reported by ZDnet.
