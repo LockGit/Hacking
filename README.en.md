@@ -31,11 +31,11 @@ __Menu__
 | [HTTP Protocol](https://github.com/LockGit/Hacking#验证码识别v1http协议range特性分析">验证码识别v1+HTTP协议Range特性分析.pdf) | Verification Code Identification and HTTP Protocol Range Analysis |
 | [Verification Code Recognition](https://github.com/LockGit/Hacking#基于机器学习tensorflow的复杂验证码识别">基于机器学习(TensorFlow)的复杂验证码识别.pdf) | Complex Verification Code Recognition Based on Machine Learning (TensorFlow) |
 | [Scrapy Vulnerability List](https://github.com/LockGit/Py#scrapy-爬虫测试项目代码在仓库crawl_360目录下) | Scrapy Crawl Vulnerability List |
-| [ip地址也可以这么表示.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/ip地址也可以这么表示.pdf) | IP address can also be expressed in this way.pdf |
-| [针对跨域问题的分析.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/从2.5w美刀漏洞赏金，针对跨域问题的分析.pdf) | Analysis of cross domain problems from 2.5W US knife loophole reward.pdf |
-| [关于TTL生存时间.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/关于TTL生存时间.pdf) | About TTL lifetime.pdf |
-| [为什么正确的SQL不能执行.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/为什么正确的SQL不能执行.pdf) | Why can't correct SQL execute.pdf |
-| [从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf) | From turning over the wall to using cloudflare as a springboard to access VPS.pdf |
+| [IP address can also be expressed in this way.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/ip地址也可以这么表示.pdf) | IP address can also be expressed in this way.pdf |
+| [Analysis of cross domain problems from 2.5W US knife loophole reward.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/从2.5w美刀漏洞赏金，针对跨域问题的分析.pdf) | Analysis of cross domain problems from 2.5W US knife loophole reward.pdf |
+| [About TTL lifetime.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/关于TTL生存时间.pdf) | About TTL lifetime.pdf |
+| [Why can't correct SQL execute.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/为什么正确的SQL不能执行.pdf) | Why can't correct SQL execute.pdf |
+| [From turning over the wall to using cloudflare as a springboard to access VPS.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf) | From turning over the wall to using cloudflare as a springboard to access VPS.pdf |
 
 
 ### attackWiFi.py 一个获取wifi密码的工具
