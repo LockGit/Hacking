@@ -31,6 +31,11 @@ __Menu__
 | [HTTP Protocol](https://github.com/LockGit/Hacking#验证码识别v1http协议range特性分析">验证码识别v1+HTTP协议Range特性分析.pdf) | Verification Code Identification and HTTP Protocol Range Analysis |
 | [Verification Code Recognition](https://github.com/LockGit/Hacking#基于机器学习tensorflow的复杂验证码识别">基于机器学习(TensorFlow)的复杂验证码识别.pdf) | Complex Verification Code Recognition Based on Machine Learning (TensorFlow) |
 | [Scrapy Vulnerability List](https://github.com/LockGit/Py#scrapy-爬虫测试项目代码在仓库crawl_360目录下) | Scrapy Crawl Vulnerability List |
+| [ip地址也可以这么表示.pdf](https://github.com/LockGit/Hacking/blob/master/pdf/ip地址也可以这么表示.pdf) | ip地址也可以这么表示.pdf |
+| [针对跨域问题的分析.pdf](https://github.com/LockGit/Hacking/blob/master/pdf/从2.5w美刀漏洞赏金，针对跨域问题的分析.pdf) | 针对跨域问题的分析.pdf |
+| [关于TTL生存时间.pdf](https://github.com/LockGit/Hacking/blob/master/pdf/关于TTL生存时间.pdf) | 关于TTL生存时间.pdf |
+| [为什么正确的SQL不能执行.pdf](https://github.com/LockGit/Hacking/blob/master/pdf/为什么正确的SQL不能执行.pdf) | 为什么正确的SQL不能执行.pdf |
+| [从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf](https://github.com/LockGit/Hacking/blob/master/pdf/从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf) | 从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf |
 
 ### attackWiFi.py 一个获取wifi密码的工具
 ```
