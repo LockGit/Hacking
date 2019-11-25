@@ -1,41 +1,42 @@
 # Hacking Tools Demo
-[English version(英文版本)](README.md)
+[中文版本(Chinese version)](README.md)
 
 __Menu__
 
 | Topic                                    | Description                              |
 | :--------------------------------------- | :--------------------------------------- |
-| <a href="https://github.com/LockGit/Hacking#attackwifipy-一个获取wifi密码的工具">attackWiFi.py | 一个获取wifi密码的工具 |
-| <a href="https://github.com/LockGit/Hacking#图解https">图解https</a> | 图解https |
-| <a href="https://github.com/LockGit/Hacking#图解hsts">图解HSTS</a> | 图解HSTS |
-| <a href="https://github.com/LockGit/Hacking#tcpportforwardpy-端口转发tool">TcpPortForward.py</a> | 端口转发tool |
-| <a href="https://github.com/LockGit/Hacking#typeecho-get-shell--typeecho反序列化漏洞利用">typeEchoShell.py|typeEchoShell.php</a> | typeEcho反序列化漏洞利用 | 
-| <a href="https://github.com/LockGit/Hacking#获取所有连接过的wifi密码win平台">wifi密码</a> | 获取所有连接过的wifi密码(Win平台) | 
-| <a href="https://github.com/LockGit/Hacking#zipattackpy--zakpy-zip加密文件暴力破解">zipattack.py|zak.py</a> | zip加密文件暴力破解 |
-| <a href="https://github.com/LockGit/Hacking#createDictpy-生成一个简单的密码破解字典">createDict.py</a> | 生成一个简单的密码破解字典 |
-| <a href="https://github.com/LockGit/Hacking#portscanpy-多线程端口扫描器">PortScan.py</a> | 多线程端口扫描器 |
-| <a href="https://github.com/LockGit/Hacking#sshattackpy-多线程ssh密码暴力破解">sshAttack.py</a> | 多线程ssh密码暴力破解 |
-| <a href="https://github.com/LockGit/Hacking#ftpattackpy-多线程ftp密码暴力破解">ftpAttack.py</a> | 多线程ftp密码暴力破解 |
-| <a href="https://github.com/LockGit/Hacking#synfloodpy-一个简单的-tcp-syn-洪水攻击-python版">synFlood.py</a> | synFlood TCP SYN 洪水攻击 |
-| <a href="https://github.com/LockGit/Hacking#ntpdenialservicepy-一个使ntp拒绝服务的poc代码">ntpdenialservice.py</a> | 一个使ntp拒绝服务的poc代码 |
-| <a href="https://github.com/LockGit/Hacking#分享一个sql注入的技巧">SQL Inject</a> | 分享一个SQL注入的技巧 |
-| <a href="https://github.com/LockGit/Hacking#attacksmbwin10py-一个smb漏洞的poc代码">attackSmb/win10.py</a> | 一个SMB漏洞的Poc |
-| <a href="https://github.com/LockGit/Hacking#badtunnel-pocrb-badtunnel-跨网段劫持">badtunnel-poc.rb</a> | badtunnel 跨网段劫持 |
-| <a href="https://github.com/LockGit/Hacking#sqlinjetctpy-一个延时注入的验证">sqlInjetct.py</a> | 一个延时注入的验证 |
-| <a href="https://github.com/LockGit/Hacking#关于ssrf漏洞-与-dns域传送漏洞">SSRF & DNS</a> | SSRF漏洞 & DNS域传送漏洞 |
-| <a href="https://github.com/LockGit/Hacking#使用python构造一个fastcgi协议请求内容发送给php-fpm--nginxiis7解析漏洞原理">fpm.py</a> | Nginx（IIS7）解析漏洞原理 |
-| <a href="https://github.com/LockGit/Hacking#morsepy-摩斯密码加解密">morse.py</a> | 摩斯密码加解密 |
-| <a href="https://github.com/LockGit/Hacking#crawlpy-轻量级图片爬虫">crawl.py</a> | 轻量级图片爬虫 |
-| <a href="https://github.com/LockGit/Hacking#wooyun_indexpy-1000个php代码审计案例20167以前乌云公开漏洞---增加索引">wooyun_index.py</a> | 1000个PHP代码审计案例(2016.7以前乌云公开漏洞)---增加索引 |
-| <a href="https://github.com/LockGit/Hacking#proxy_crawlget_proxypy--ocr_imgpy-反爬虫代理服务器抓取实现方式">proxy_crawl/get_proxy.py & proxy_crawl/ocr_img.py </a> |反爬虫代理服务器抓取实现 |
-| <a href="https://github.com/LockGit/Hacking#验证码识别v1http协议range特性分析">验证码识别v1+HTTP协议Range特性分析.pdf</a> | 验证码识别v1+HTTP协议Range特性分析 |
-| <a href="https://github.com/LockGit/Hacking#基于机器学习tensorflow的复杂验证码识别">基于机器学习(TensorFlow)的复杂验证码识别.pdf</a> | 基于机器学习(TensorFlow)的复杂验证码识别 |
-| <a href="https://github.com/LockGit/Py#scrapy-爬虫测试项目代码在仓库crawl_360目录下">Scrapy爬取站点数据</a> | Scrapy爬取漏洞列表 |
-| [ip地址也可以这么表示.pdf](https://github.com/LockGit/Hacking/blob/master/pdf/ip地址也可以这么表示.pdf) | ip地址也可以这么表示.pdf |
-| [针对跨域问题的分析.pdf](https://github.com/LockGit/Hacking/blob/master/pdf/从2.5w美刀漏洞赏金，针对跨域问题的分析.pdf) | 针对跨域问题的分析.pdf |
-| [关于TTL生存时间.pdf](https://github.com/LockGit/Hacking/blob/master/pdf/关于TTL生存时间.pdf) | 关于TTL生存时间.pdf |
-| [为什么正确的SQL不能执行.pdf](https://github.com/LockGit/Hacking/blob/master/pdf/为什么正确的SQL不能执行.pdf) | 为什么正确的SQL不能执行.pdf |
-| [从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf](https://github.com/LockGit/Hacking/blob/master/pdf/从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf) | 从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf |
+| [WiFi Cracker](https://github.com/LockGit/Hacking#wifi-cracker) | WiFi Password Cracker |
+| [HTTPS Schematics](https://github.com/LockGit/Hacking#https-schematics) | Schematics for the HTTPS Protocol |
+| [HSTS Schematics](https://github.com/LockGit/Hacking#hsts-schematics) | Schematics for the HSTS Protocol |
+| [TCP Port Forwarder](https://github.com/LockGit/Hacking#tcpportforwardpy-端口转发tool) | TCP Port Forwarder |
+| [typeEchoShell.py](https://github.com/LockGit/Hacking#typeecho-get-shell--typeecho反序列化漏洞利用) | typeEcho frame unserialize exploit |
+| [WiFi Password](https://github.com/LockGit/Hacking#获取所有连接过的wifi密码win平台) | Get All WiFi Passwords for Connected Networks (Windows Only) |
+| [ZIP Cracker](https://github.com/LockGit/Hacking#zipattackpy--zakpy-zip加密文件暴力破解) | Crack the Password for ZIP Archive |
+| [Dictionary Creator](https://github.com/LockGit/Hacking#createDictpy-生成一个简单的密码破解字典) | Create Dictionary for a Dictionary Attack |
+| [Port Scanner](https://github.com/LockGit/Hacking#portscanpy-多线程端口扫描器) | Multi-Threaded Port Scanner |
+| [SSH Cracker](https://github.com/LockGit/Hacking#sshattackpy-多线程ssh密码暴力破解) | Multi-Threaded SSH Password Brute Force Cracker |
+| [FTP Cracker](https://github.com/LockGit/Hacking#ftpattackpy-多线程ftp密码暴力破解) | Multi-Threaded FTP Password Brute Force Cracker |
+| [SYN Flooder](https://github.com/LockGit/Hacking#synfloodpy-一个简单的-tcp-syn-洪水攻击-python版) | TCP Flood Attack |
+| [NTP DOS](https://github.com/LockGit/Hacking#ntpdenialservicepy-一个使ntp拒绝服务的poc代码) | POC Program for NTP Denial Of Service |
+| [SQL Injector](https://github.com/LockGit/Hacking#分享一个sql注入的技巧) | SQL Injector |
+| [SMB Attacker](https://github.com/LockGit/Hacking#attacksmbwin10py-一个smb漏洞的poc代码) | POC Program to Attack SMB Vulnerability (Windows 10 Only) |
+| [Cross-Network Hijacking](https://github.com/LockGit/Hacking#badtunnel-pocrb-badtunnel-跨网段劫持) | Bad Tunnel Cross-Network Hijacking |
+| [SQL Injection Verifier](https://github.com/LockGit/Hacking#sqlinjetctpy-一个延时注入的验证) | Verification of a Delayed SQL Injection |
+| [SSRF and DNS Attacker](https://github.com/LockGit/Hacking#关于ssrf漏洞-与-dns域传送漏洞) | SSRF Vulnerability and DNS Domain Delivery Vulnerability Attacker |
+| [Nginx Parser Vulnerability](https://github.com/LockGit/Hacking#使用python构造一个fastcgi协议请求内容发送给php-fpm--nginxiis7解析漏洞原理) | Nginx (IIS7) Parsing Vulnerability Principle |
+| [Morse Encoder](https://github.com/LockGit/Hacking#morsepy-摩斯密码加解密) | Morse Password Encoder and Decoder |
+| [Website Crawler](https://github.com/LockGit/Hacking#crawlpy-轻量级图片爬虫) | Lightweight Website Crawler |
+| [List of PHP Audit Cases](https://github.com/LockGit/Hacking#wooyun_indexpy-1000个php代码审计案例20167以前乌云公开漏洞---增加索引) | 1000 PHP Code Audit Cases (Before 2016.7 Black Cloud Open Vulnerability) |
+| [Anti-Crawler Proxy List Server](https://github.com/LockGit/Hacking#proxy_crawlget_proxypy--ocr_imgpy-反爬虫代理服务器抓取实现方式) | Proxy List Server Implementation with Defenses Against Crawlers |
+| [HTTP Protocol](https://github.com/LockGit/Hacking#验证码识别v1http协议range特性分析">验证码识别v1+HTTP协议Range特性分析.pdf) | Verification Code Identification and HTTP Protocol Range Analysis |
+| [Verification Code Recognition](https://github.com/LockGit/Hacking#基于机器学习tensorflow的复杂验证码识别">基于机器学习(TensorFlow)的复杂验证码识别.pdf) | Complex Verification Code Recognition Based on Machine Learning (TensorFlow) |
+| [Scrapy Vulnerability List](https://github.com/LockGit/Py#scrapy-爬虫测试项目代码在仓库crawl_360目录下) | Scrapy Crawl Vulnerability List |
+| [ip地址也可以这么表示.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/ip地址也可以这么表示.pdf) | IP address can also be expressed in this way.pdf |
+| [针对跨域问题的分析.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/从2.5w美刀漏洞赏金，针对跨域问题的分析.pdf) | Analysis of cross domain problems from 2.5W US knife loophole reward.pdf |
+| [关于TTL生存时间.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/关于TTL生存时间.pdf) | About TTL lifetime.pdf |
+| [为什么正确的SQL不能执行.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/为什么正确的SQL不能执行.pdf) | Why can't correct SQL execute.pdf |
+| [从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf) | From turning over the wall to using cloudflare as a springboard to access VPS.pdf |
+
 
 ### attackWiFi.py 一个获取wifi密码的工具
 ```
@@ -537,5 +538,6 @@ SVM算法相比较KNN算法来说，原理上要复杂复杂的多，SVM算法�
 ![](https://github.com/LockGit/Hacking/blob/master/img/cnn_test.png)
 
 总结文档：+ [基于机器学习(TensorFlow)的复杂验证码识别.pdf](https://github.com/LockGit/Hacking/blob/master/res/doc/基于机器学习(TensorFlow)的复杂验证码识别.pdf)
+
 
 
