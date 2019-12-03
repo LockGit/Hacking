@@ -1,6 +1,10 @@
 # Hacking Tools Demo
 [中文版本(Chinese version)](README.md)
 
+>Wechat Subscibe
+
+![微信](https://github.com/LockGit/gochat/blob/master/architecture/gochat-wx.jpg)
+
 __Menu__
 
 | Topic                                    | Description                              |
