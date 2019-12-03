@@ -1,7 +1,7 @@
 # Hacking Tools Demo
 [中文版本(Chinese version)](README.md)
 
->Wechat Subscibe
+>Wechat Subscibe (Share something interesting from time to time)
 
 ![微信](https://github.com/LockGit/gochat/blob/master/architecture/gochat-wx.jpg)
 
