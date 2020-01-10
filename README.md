@@ -39,7 +39,8 @@ __Menu__
 | [针对跨域问题的分析.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/从2.5w美刀漏洞赏金，针对跨域问题的分析.pdf) | 从2.5w美刀漏洞赏金，针对跨域问题的分析.pdf|
 | [关于TTL生存时间.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/关于TTL生存时间.pdf) | 关于TTL生存时间.pdf |
 | [为什么正确的SQL不能执行.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/为什么正确的SQL不能执行.pdf) | 为什么正确的SQL不能执行.pdf |
-| [从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf) | 从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf || [了解一下golang汇编.md](https://github.com/LockGit/Hacking/raw/master/pdf/了解一下golang汇编.md) | 了解一下golang汇编.md |
+| [从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf) | 从翻墙到使用cloudflare作为跳板来访问vps折腾出的几个问题.pdf |
+| [了解一下golang汇编.md](https://github.com/LockGit/Hacking/raw/master/pdf/了解一下golang汇编.md) | 了解一下golang汇编.md |
 | [从执行redis命令失败分析一下Pipeline，TxPipeline，Transaction，Atomic.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/从执行redis命令失败分析一下Pipeline，TxPipeline，Transaction，Atomic.pdf) | 从执行redis命令失败分析一下Pipeline，TxPipeline，Transaction，Atomic.pdf |
 | [正确获取ip地址.md](https://github.com/LockGit/Hacking/raw/master/pdf/正确获取ip地址.md) | 正确获取ip地址.md |
 
