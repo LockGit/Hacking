@@ -9,6 +9,7 @@ __Menu__
 
 | Topic                                    | Description                              |
 | :--------------------------------------- | :--------------------------------------- |
+| [RCE](https://github.com/LockGit/Hacking#远程命令执行(RCE)) | 远程命令执行(RCE) |
 | <a href="https://github.com/LockGit/Hacking#attackwifipy-一个获取wifi密码的工具">attackWiFi.py | 一个获取wifi密码的工具 |
 | <a href="https://github.com/LockGit/Hacking#图解https">图解https</a> | 图解https |
 | <a href="https://github.com/LockGit/Hacking#图解hsts">图解HSTS</a> | 图解HSTS |
@@ -43,6 +44,34 @@ __Menu__
 | [了解一下golang汇编.md](https://github.com/LockGit/Hacking/raw/master/pdf/了解一下golang汇编.md) | 了解一下golang汇编.md |
 | [从执行redis命令失败分析一下Pipeline，TxPipeline，Transaction，Atomic.pdf](https://github.com/LockGit/Hacking/raw/master/pdf/从执行redis命令失败分析一下Pipeline，TxPipeline，Transaction，Atomic.pdf) | 从执行redis命令失败分析一下Pipeline，TxPipeline，Transaction，Atomic.pdf |
 | [正确获取ip地址.md](https://github.com/LockGit/Hacking/raw/master/pdf/正确获取ip地址.md) | 正确获取ip地址.md |
+
+
+### 远程命令执行(RCE)
+```
+Remote Command/Code Execute 简称 RCE 
+
+比如这篇文章：Gogs远程命令执行漏洞分析 （https://www.anquanke.com/post/id/163575）
+开发者在处理file型session时未处理危险字符造成目录穿越。
+攻击者通过目录穿越，伪造的管理员session，成功伪造管理员登陆,后利用Git hook实现任意远程命令执行。
+
+这只是Gogs项目，因为关注的人多，所以才被披露，实际场景中可能还有很多框架存在类似或者相似问题。
+
+比如2018年我在Beego中也发现了类似漏洞的存在，并向作者提交了一个漏洞修复的pr (https://github.com/astaxie/beego/pull/3383)
+作者也很快将修复代码合并到了主分支。
+
+但在这之间，另一位安全爱好者通过我提交的Beego框架的漏洞pr发现了某开源在线文档管理系统中存在漏洞，
+可以登录未授权用户账号。（https://github.com/lifei6671/mindoc/issues/384）
+
+而主要原因在于这个开源在线文档管理系统使用了Beego框架，而当时的Beego框架版本中还存在类似漏洞并没有修复。
+
+在web领域的框架尤其PHP最多，这其中肯定也有很多问题，以前给国产某框架提过一个，当时WooYun还没有关闭，
+而现在WooYun所代表的白帽文化可能永远消失在互联网的浪潮中。
+
+有些问题其实是一个小的安全问题，其本身可能并没有什么特别高深的技术含量，但所有小的安全问题组合起来就可以变成一个大的安全问题。
+
+类似问题有很多，主要是聚焦开发的往往关注安全很少，只有关注的人足够多了或者有乐于分享的人或者有推动这些被公开的动力，
+那些潜在的漏洞才有可能被逐渐披露。
+```
 
 ### attackWiFi.py 一个获取wifi密码的工具
 ```
