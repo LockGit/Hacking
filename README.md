@@ -51,12 +51,16 @@ Remote Command/Code Execute 简称 RCE
 
 这只是Gogs项目，因为关注的人多，所以才被披露，实际场景中可能还有很多框架存在类似或者相似问题。
 
-比如2018年我在Beego中也发现了类似漏洞的存在，并向作者提交了一个漏洞修复的pr (https://github.com/astaxie/beego/pull/3383)
+比如2018年我在Beego中也发现了类似漏洞的存在，并向作者提交了一个漏洞修复的pr，链接如下： 
+```
+<a href='https://github.com/beego/beego/pull/3383'>https://github.com/beego/beego/pull/3383</a>
+```
 作者也很快将修复代码合并到了主分支。
-
 但在这之间，另一位安全爱好者通过我提交的Beego框架的漏洞pr发现了某开源在线文档管理系统中存在漏洞，
-可以登录未授权用户账号。（https://github.com/lifei6671/mindoc/issues/384）
-
+可以登录未授权用户账号。参考如下链接：
+```
+<a href='https://github.com/lifei6671/mindoc/issues/384'>https://github.com/lifei6671/mindoc/issues/384</a>
+```
 而主要原因在于这个开源在线文档管理系统使用了Beego框架，而当时的Beego框架版本中还存在类似漏洞并没有修复。
 
 在web领域的框架尤其PHP最多，这其中肯定也有很多问题，以前给国产某框架提过一个，当时WooYun还没有关闭，
